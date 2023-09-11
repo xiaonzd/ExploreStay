@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <title>Explore Stay</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <link rel="stylesheet" href="/css/style.css">
+    <script src="https://kit.fontawesome.com/28535d5dc3.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <!-- Background Image : first thing you see when opening the website -->
+
+    <div class="fadein">
+        <div class="fadeimg" id="f5"></div>
+        <div class="fadeimg" id="f4"></div>
+        <div class="fadeimg" id="f3"></div>
+        <div class="fadeimg" id="f2"></div>
+        <div class="fadeimg" id="f1"></div>
+    </div>
+
+    <!-- Nav Bar-->
+     <nav class="navbar" id="navbar">
+        <div class="navlogo">
+            <a href="/inicio.html"><img width="120px" height="auto" src="/img/ExploreStay-04.png"></a>
+        </div>
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fas fa-bars"></i>
+        </label>
+        <ul>
+            <li><a href="/inicio.html">Início</a></li>
+            <li><a href="/sobre.html">Sobre</a></li>
+            <li><a href="/serviços.html">Serviços</a></li>
+            <li><a href="/portfolio.html">Portfolio</a></li>
+            <li><a href="/exploramosjuntos.html">Exploramos juntos?</a></li>
+        </ul>
+    </nav>
+
+    <!-- Introduction Text-->
+    <div class="intro" id="intro">
+        <p class="intext">Bem-vindo à <span>Explore Stay</span> especializada em exploração e consultaria hoteleira. Somos apaixonados pela área e queremos ajuda-lo a maximizar o potencial do seu negócio e oferecer soluções personalizadas para alcançar o sucesso. <br><br>A nossa equipa experiente e comprometida está pronta para ajuda-lo a otimizar o desempenho do seu hotel e criar experiências memoráveis para os hóspedes.</p>
+    </div>
+
+    <div class="background-img2"></div>
+
+    <!-- Main Content : includes small introduction, serviços e portfolio com respetivos buttons of redirecting -->
+    <div class="maincont">
+        <p class="selltext">Temos uma equipa com paixão pela hospitalidade, dedicados a transformar hotéis em empreendimentos de sucesso. Nossa abordagem abrange desde a conceção e desenvolvimento até a operação diária, garantindo que cada propriedade alcance todo o seu potencial. Com anos de experiência e uma visão inovadora, queremos ajudar a impulsionar o seu negócio hoteleiro. Explore conosco a arte de criar exeriências memoráveis e resultados excecionais.</p>
+
+        <!-- Serviços Column -->
+        <div class="serviços-column">
+            <div class="serviços-left">
+                <div class="serviços">
+                    <div class="serviços-cont">
+                        <h1 class="serviços-title">Serviços</h1>
+                        <p class="serviços-text">Queremos apoiar a gestão do seu negócio hoteleiro através de...</p>
+                        <div class="button-container">
+                            <a href="/serviços.html">
+                                <button class="center-button" type="button">Saiba mais</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="serviços-right"></div>
+        </div>
+
+        <!-- Portfolio Column -->
+        <div class="portfolio-column">
+            <div class="portfolio-left"></div>
+            <div class="portfolio-right">
+                <div class="portfolio">
+                    <div class="portfolio-cont">
+                    <h1 class="portfolio-title">Portfolio</h1>
+                    <p class="portfolio-text">Dedicamo-nos com paixão em alcançar o sucesso em cada desafio.</p>
+                    <div class="button-container">
+                        <a href="/portfolio.html">
+                            <button class="center-button" type="button">Saiba mais</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+
+        <!-- Porfolio Column Phone -->
+        <div class="portfolio-column-phone">
+            <div class="portfolio-right">
+                <div class="portfolio">
+                    <div class="portfolio-cont">
+                        <h1 class="portfolio-title">Portfolio</h1>
+                        <p class="protfolio-text">Dedicamo-nos com paixão em alcançar o sucesso em cada desafio.</p>
+                        <div class="button-container">
+                            <a href="/serviços.html">
+                                <button class="center-button" type="button">Saiba mais</button>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="portfolio-left"></div>
+        </div>
+
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p class="contactos"><span class="contacte-nos">Contacte-nos</span><br>
+        Tel.: +351 265 550 640<br>
+        Email: admin@explorestay.pt</p>
+    </footer>
+
+<!-- Nav Bar script for sticky -->
+<script>
+    var nav = document.getElementById("navbar");
+    var intro = document.getElementById("intro");
+
+
+    window.onscroll = () => {
+        if(intro.getBoundingClientRect().y <= 0){
+            if(!nav.classList.contains("navbar-fixed-position")){
+                nav.classList.add("navbar-fixed-position");
+            }   
+        }else{
+            nav.classList.remove("navbar-fixed-position");
+        }
+
+    };
+
+</script>
+
+</body>
+
+</html>

@@ -1,0 +1,1015 @@
+/*
+Theme Name: Explore Stay
+Theme URI: https://wordpress.org/themes/explorestaytheme/
+Author: Patrícia Pires
+Description: Custom theme for Explore Stay
+Version: 1
+Text Domain: explorestay
+*/
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/** HOMEPAGE **/
+/* Imagem Background 1 Phone*/
+
+.fadein-phone {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: none;
+}
+
+.fadeimgp {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* Parallax Effect */
+    background-repeat: no-repeat;
+    -webkit-animation-name: fade;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-duration: 15s;
+    animation-name: fade;
+    animation-iteration-count: infinite;
+    animation-duration: 15s;
+}
+
+#f2p {
+    -webkit-animation-delay: -12s;
+    animation-delay: -12s;
+}
+
+#f3p {
+    -webkit-animation-delay: -9s;
+    animation-delay: -9s;
+}
+
+#f4p {
+    -webkit-animation-delay: -6s;
+    animation-delay: -6s;
+}
+
+#f5p {
+    -webkit-animation-delay: -3s;
+    animation-delay: -3s;
+}
+
+/* Imagem Background 1 */
+
+.fadein {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    display: block;
+}
+
+.fadeimg {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed; /* Parallax Effect */
+    background-repeat: no-repeat;
+    -webkit-animation-name: fade;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-duration: 15s;
+    animation-name: fade;
+    animation-iteration-count: infinite;
+    animation-duration: 15s;
+}
+
+@-webkit-keyframes fade {
+    0% {opacity: 0;}
+    20% {opacity: 1;}
+    33% {opacity: 1;}
+    53% {opacity: 0;}
+    100% {opacity: 0;}
+}
+
+@keyframes fade {
+    0% {opacity: 0;}
+    20% {opacity: 1;}
+    33% {opacity: 1;}
+    53% {opacity: 0;}
+    100% {opacity: 0;}
+}
+
+#f2 {
+    -webkit-animation-delay: -12s;
+    animation-delay: -12s;
+}
+
+#f3 {
+    -webkit-animation-delay: -9s;
+    animation-delay: -9s;
+}
+
+#f4 {
+    -webkit-animation-delay: -6s;
+    animation-delay: -6s;
+}
+
+#f5 {
+    -webkit-animation-delay: -3s;
+    animation-delay: -3s;
+}
+
+/* Imagem Background 2 */
+
+.background-img2 {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 100vh;
+    background-attachment: fixed; /*Parallax effect*/
+}
+
+/** NAVBAR **/
+
+.navbar-fixed-position {
+    position: fixed !important;
+    top: 0 !important;
+    z-index: 1000000 !important;
+}
+
+.navbar {
+    background-color: white;
+    position: absolute;
+    width: 100%;
+    height: 65px;
+    text-align: center;
+    z-index:100000;
+    bottom: 0;
+    border-bottom: 2px solid #e7e7e7;
+}
+
+.navbar ul {
+    padding: 20px 0 20px;
+}
+
+.navbar a {
+    font-size: 15px;
+    color: #525252;
+    text-decoration: none;
+}
+
+.navbar a:hover {
+    color: black;
+}
+
+.navbar li {
+    display: inline-block;
+    list-style: none;
+    padding-inline: 55px;
+}
+
+.checkbtn {
+    font-size: 23px;
+    color: #525252;
+    float: right;
+    margin-right: 35px;
+    cursor: pointer;
+    display: none;
+}
+
+#check {
+    display: none;
+}
+
+.navlogo {
+    float: left;
+    margin-left: 35px;
+    padding: 20px 0 20px;
+    display: none;
+}
+
+/* Introdução */
+
+.intro {
+    background-color: white;
+    position: relative;
+    z-index: 1000;
+}
+
+.intext {
+    color: black;
+    font-size: 15px;
+    width: 70vw;
+    box-sizing: content-box;
+    text-align: justify;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 10vh;
+    padding-bottom: 10vh;
+    line-height: 3.5vh;
+}
+
+/* Word: Explore Stay */
+
+span {
+    font-weight: 600;
+}
+
+/* Main content: frase + serviços e portfolio links */
+
+.maincont {
+    background-color: white;
+}
+
+.selltext {
+    position: relative;
+    color: black;
+    font-size: 15px;
+    width: 70vw;
+    box-sizing: content-box;
+    text-align: justify;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 15vh;
+    padding-bottom: 15vh;
+    line-height: 3.5vh;
+}
+
+
+/* Buttons */
+
+button {
+    background-color: #cfcfcf;
+    border-radius: 100px;
+    border-width: 0;
+    display: inline-block;
+    font-size: 15px;
+    list-style: none;
+    padding-left: 35px;
+    padding-right: 35px;
+    padding-top: 13px;
+    padding-bottom: 13px;
+    text-align: center;
+    margin-top: 40px;
+    color: black;
+}
+
+.button-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+button:hover {
+    background-color: #333333;
+    color: white;
+	transition: all .5s;
+}
+
+/* Serviços Column */
+
+.serviços-column {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.serviços-right {
+    width: 50vw;
+    height: 90vh;
+    overflow: hidden;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.serviços-left {
+    display: flex;
+    width: 40vw;
+    align-self: center;
+    margin: auto;
+}
+
+.serviços-title {
+    font-size: 50px;
+}
+
+.serviços-cont {
+    line-height: 2.2;
+}
+
+.serviços-text {
+    font-size: 17px;
+    list-style-position: inside;
+}
+
+/* Portfolio Column */
+
+.portfolio-column {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.portfolio-column-phone {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.portfolio-left {
+    width: 50vw;
+    height: 90vh;
+    overflow: hidden;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.portfolio-right {
+    display: flex;
+    width: 40vw;
+    align-self: center;
+    margin: auto;
+}
+
+.portfolio-title {
+    font-size: 50px;
+}
+
+.portfolio-cont {
+    line-height: 2.2;
+}
+
+.portfolio-text {
+    font-size: 17px;
+    list-style-position: inside;
+}
+
+/** FOOTER **/
+
+footer {
+    padding-top: 5%;
+    padding-bottom: 5%;
+    margin-top: 10%;
+    line-height: 2.5;
+    border-top: 2px solid #e7e7e7;
+}
+
+.contactos {
+    font-size: 15px;
+}
+
+
+/** NAVBAR: Sobre, Serviços, Portfolio, Exploramos Juntos **/
+
+.navbar-top {
+    background-color: white;
+    width: 100%;
+    height: 65px;
+    text-align: center;
+    z-index:100000;
+    border-bottom: 2px solid #e7e7e7;
+    position: sticky !important;
+    top: 0;
+}
+
+.navbar-top ul {
+    padding: 20px 0 20px;
+}
+
+.navbar-top a {
+    font-size: 15px;
+    color: #525252;
+    text-decoration: none;
+}
+
+.navbar-top a:hover {
+    color: black;
+}
+
+.navbar-top li {
+    display: inline-block;
+    list-style: none;
+    padding-inline: 55px;
+}
+
+/** SOBRE PAGE **/
+/* Sobre Column */
+
+.sobrepage-column {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 70px;
+}
+
+.sobrepage-left {
+    margin: auto;
+}
+
+.sobrepage-title {
+    line-height: 2.5;
+    font-size: 50px;
+}
+
+.sobrepage-text {
+    font-size: 15px;
+    text-align: justify;
+}
+
+.sobrepage-content{
+    margin-left: 12%;
+    margin-right: 12%;
+}
+
+.sobrepage-img {
+    width: 50vw;
+    height: 103%;
+    overflow: hidden;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.sobrepage-content p {
+    text-indent: 20px;
+}
+
+/** SERVIÇOS PAGE **/
+/* Hotel Management Column */
+
+.hotelManagement-column {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 70px;
+}
+
+.hotelManagement-right {
+    width: 50vw;
+    height: 90vh;
+    overflow: hidden;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.hotelManagement-left {
+    display: flex;
+    width: 40vw;
+    align-self: center;
+    margin: auto;
+}
+
+.hotelManagement-title {
+    font-size: 50px;
+    line-height: 1.2;
+    padding-bottom: 5%;
+}
+
+.hotelManagement-cont {
+    line-height: 2.2;
+}
+
+.hotelManagement-text {
+    font-size: 17px;
+    list-style-position: inside;
+}
+
+/* Consultaria Column */
+
+.consultaria-column {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.consultaria-left {
+    width: 50vw;
+    height: 90vh;
+    overflow: hidden;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.consultaria-right {
+    display: flex;
+    width: 40vw;
+    align-self: center;
+    margin: auto;
+}
+
+.consultaria-title {
+    font-size: 50px;
+    line-height: 1.2;
+    padding-bottom: 5%;
+}
+
+.consultaria-cont {
+    line-height: 2.2;
+}
+
+.consultaria-text {
+    font-size: 17px;
+    list-style-position: inside;
+}
+
+/* Formação Column */
+
+.formação-column {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.formação-right {
+    width: 50vw;
+    height: 90vh;
+    overflow: hidden;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.formação-left {
+    display: flex;
+    width: 40vw;
+    align-self: center;
+    margin: auto;
+}
+
+.formação-title {
+    font-size: 50px;
+    line-height: 1.2;
+    padding-bottom: 5%;
+}
+
+.formação-cont {
+    line-height: 2.2;
+}
+
+.formação-text {
+    font-size: 17px;
+    list-style-position: inside;
+}
+
+/** PORTFOLIO PAGE **/
+/* Hotel Laitau Column */
+
+.project1-column {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin-top: 70px;
+}
+
+.project1-right {
+    width: 50vw;
+    height: 90vh;
+    overflow: hidden;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.project1-left {
+    display: flex;
+    width: 40vw;
+    align-self: center;
+    margin: auto;
+}
+
+.project1-title {
+    font-size: 50px;
+    line-height: 1;
+}
+
+.project1-cont {
+    line-height: 2.2;
+}
+
+.project1-text {
+    font-size: 17px;
+    list-style-position: inside;
+    line-height: 2;
+}
+
+.project1-type {
+    line-height: 6;
+    font-size: 16px;
+}
+
+/** Contact Form Text **/
+
+.contact-form-text {
+    position: relative;
+    color: black;
+    font-size: 15px;
+    width: 43vw;
+    box-sizing: content-box;
+    text-align: justify;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 10vh;
+    padding-bottom: 5vh;
+    line-height: 3.5vh;
+}
+
+/** Responsiveness */
+
+@media (max-width: 600px) {
+    .serviços-title {
+        font-size: 45px;
+    }
+
+    .serviços-text {
+        font-size: 14px;
+    }
+
+    .serviços-column {
+        display: block;
+    }
+
+    .serviços-left {
+        width: 70vw;
+    }
+
+    .serviços-right {
+        width: 100%;
+        height: 50vh;
+    }
+
+    .portfolio-title {
+        font-size: 45px;
+        margin-top: 30%;
+    }
+
+    .portfolio-text {
+        font-size: 14px;
+    }
+
+    .portfolio-column-phone {
+        display: block;
+    }
+
+    .portfolio-right {
+        width: 70vw;
+    }
+
+    .portfolio-left {
+        width: 100%;
+        height: 50vh;
+    }
+
+    .portfolio-column {
+        display: none;
+    }
+
+    footer {
+        padding-top: 10%;
+        padding-bottom: 10%;
+        line-height: 2.5;
+        margin-top: 20%;
+    }
+
+    button {
+        font-size: 12px;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 8px;
+        padding-bottom: 8px;
+        margin-top: 30%;
+        margin-bottom: 60%;
+    }
+
+    .contactos {
+        font-size: 15px;
+        text-align: justify;
+        margin-left: 20%;
+        margin-right: 20%;
+    }
+
+    .sobrepage-right {
+        padding-bottom: 15%;
+    }
+
+    .hotelManagement-title {
+        font-size: 45px;
+        margin-top: 10%;
+        line-height: 1;
+        margin-bottom: 6%;
+    }
+
+    .hotelManagement-text {
+        font-size: 14px;
+    }
+
+    .hotelManagement-column {
+        display: block;
+    }
+
+    .hotelManagement-left {
+        width: 70vw;
+    }
+
+    .hotelManagement-right {
+        width: 100%;
+        height: 50vh;
+    }
+
+    .formação-title {
+        font-size: 45px;
+        margin-top: 30%;
+        line-height: 1.2;
+        margin-bottom: 6%;
+    }
+
+    .formação-text {
+        font-size: 14px;
+    }
+
+    .formação-column {
+        display: block;
+    }
+
+    .formação-left {
+        width: 70vw;
+        margin-bottom: 10%;
+    }
+
+    .formação-right {
+        width: 100%;
+        height: 50vh;
+    }
+
+    .consultaria-title {
+        font-size: 45px;
+        margin-top: 30%;
+    }
+
+    .consultaria-text {
+        font-size: 14px;
+    }
+
+    .consultaria-column-phone {
+        display: block;
+    }
+
+    .consultaria-right {
+        width: 70vw;
+    }
+
+    .consultaria-left {
+        width: 100%;
+        height: 50vh;
+    }
+
+    .consultaria-column {
+        display: none;
+    }
+
+    .project1-title {
+        font-size: 45px;
+        margin-top: 10%;
+    }
+
+    .project1-text {
+        font-size: 14px;
+    }
+
+    .project1-column {
+        display: block;
+    }
+
+    .project1-left {
+        width: 70vw;
+    }
+
+    .project1-right {
+        width: 100%;
+        height: 50vh;
+    }
+}
+
+/* Changes the portfolio column organization for desktop */
+@media (min-width: 600px) {
+    .portfolio-column-phone {
+        display: none;
+    }
+
+    .consultaria-column-phone {
+        display: none;
+    }
+
+    footer {
+        padding-left: 15%;
+    }
+}
+
+@media (min-width: 1px) and (max-width: 922px) {
+
+    /* Navbar Button */
+
+    #check:checked ~ ul {
+        left: 0;
+    }
+
+    .checkbtn {
+        display: block;
+    }
+
+    .navlogo {
+        display: block;
+    }
+
+    /* Navbar */
+
+    .navbar ul {
+        position: absolute;
+        width: 100%;
+        height: 100vh;
+        background: #f1f1f1;
+        top: 7vh;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+
+    .navbar ul li {
+        display: block;
+    }
+
+    .navbar ul li a {
+        font-size: 20px;
+        line-height: 60px;
+    }
+
+    /* Top Fixed Navbar */
+
+    .navbar-top ul {
+        position: absolute;
+        width: 100%;
+        height: 100vh;
+        background: #f1f1f1;
+        top: 7vh;
+        left: -100%;
+        text-align: center;
+        transition: all .5s;
+    }
+
+    .navbar-top ul li {
+        display: block;
+    }
+
+    .navbar-top ul li a {
+        font-size: 20px;
+        line-height: 60px;
+    }
+
+    .sobrepage-title {
+        font-size: 45px;
+        margin-top: 10%;
+    }
+
+    .sobrepage-text {
+        font-size: 14px;
+    }
+
+    .sobrepage-column {
+        display: block;
+    }
+
+    .sobrepage-left {
+        width: 100vw;
+        padding-bottom: 10%;
+    }
+
+    .sobrepage-img {
+        width: 100vw;
+        height: 70vh;
+    }
+
+    .fadein {
+        display: none;
+    }
+
+    .fadein-phone {
+        display: block;
+    }
+
+}
+
+@media (min-width: 601px) and (max-width: 984px) {
+    .project1-title {
+        font-size: 50px;
+        margin-top: 10%;
+    }
+
+    .project1-text {
+        font-size: 15px;
+    }
+
+    .project1-column {
+        display: block;
+    }
+
+    .project1-left {
+        width: 70vw;
+    }
+
+    .project1-right {
+        width: 100%;
+        height: 50vh;
+    }
+
+    .hotelManagement-title {
+        font-size: 50px;
+        margin-top: 10%;
+        line-height: 1;
+        margin-bottom: 6%;
+    }
+
+    .hotelManagement-text {
+        font-size: 15px;
+    }
+
+    .hotelManagement-column {
+        display: block;
+    }
+
+    .hotelManagement-left {
+        width: 70vw;
+    }
+
+    .hotelManagement-right {
+        width: 100%;
+        height: 50vh;
+    }
+
+    .formação-title {
+        font-size: 50px;
+        margin-top: 20%;
+        line-height: 1.2;
+        margin-bottom: 6%;
+    }
+
+    .formação-text {
+        font-size: 15px;
+    }
+
+    .formação-column {
+        display: block;
+    }
+
+    .formação-left {
+        width: 70vw;
+        margin-bottom: 10%;
+    }
+
+    .formação-right {
+        width: 100%;
+        height: 50vh;
+    }
+
+    .consultaria-title {
+        font-size: 50px;
+        margin-top: 20%;
+    }
+
+    .consultaria-text {
+        font-size: 15px;
+    }
+
+    .consultaria-column-phone {
+        display: block;
+    }
+
+    .consultaria-right {
+        width: 70vw;
+    }
+
+    .consultaria-left {
+        width: 100%;
+        height: 50vh;
+    }
+
+    .consultaria-column {
+        display: none;
+    }
+
+    button {
+        font-size: 15px;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 8px;
+        padding-bottom: 8px;
+        margin-top: 30%;
+        margin-bottom: 60%;
+    }  
+}

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+    <title>Explore Stay</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="css/lightslider.css">
+    <script src="https://kit.fontawesome.com/28535d5dc3.js" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="/js/jquery.js"></script>
+    <script type="text/javascript" src="/js/lightslider.js"></script>
+</head>
+
+<body>
+
+    <!-- Nav Bar Fixed Top-->
+     <nav class="navbar-top">
+        <input type="checkbox" id="check">
+        <label for="check" class="checkbtn">
+            <i class="fas fa-bars"></i>
+        </label>
+        <ul>
+            <li><a href="/inicio.html">Início</a></li>
+            <li><a href="/sobre.html">Sobre</a></li>
+            <li><a href="/serviços.html">Serviços</a></li>
+            <li><a href="/portfolio.html">Portfolio</a></li>
+            <li><a href="/exploramosjuntos.html">Exploramos juntos?</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hotel Laitau Grid Row -->
+    <div class="project1-column">
+        <div class="project1-left">
+            <div class="project1">
+                <div class="project1-cont">
+                    <h1 class="project1-title">Hotel Laitau</h1>
+                    <h4 class="project1-type">Renovação e Gestão Integral</h4>
+                    <p class="project1-text">47 quartos<br><br>Hotel com atmosfera familiar localizado no centro da cidade de Setúbal.</p>
+                    <div class="button-container">
+                        <a href="http://www.hotellaitau.pt/" target="_blank">
+                            <button class="center-button" type="button">Visitar</button>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="project1-right">
+            <div class="project1-img"></div>
+        </div>
+        </div>
+    </div>
+
+        <!-- Hotel Laitau Slideshow -->
+        <ul id="autoWidth" class="cs-hidden">
+            <li class="item-a">
+                <div class="box"></div>
+                    <div class="slide-img">
+                        <img src="/img/laitau-lounge2.jpg">
+                    </div>
+            </li>
+            <li class="item-b">
+                <div class="box"></div>
+                    <div class="slide-img">
+                        <img src="/img/laitau-bar.jpg">
+                    </div>
+            </li>
+            <li class="item-c">
+                <div class="box"></div>
+                    <div class="slide-img">
+                        <img src="/img/laitau-peqlounge.jpg">
+                    </div>
+            </li>
+            <li class="item-d">
+                <div class="box"></div>
+                    <div class="slide-img">
+                        <img src="/img/laitau-peqlounge5.jpg">
+                    </div>
+            </li>
+            <li class="item-e">
+                <div class="box"></div>
+                    <div class="slide-img">
+                        <img src="/img/laitau-peqalm2.jpg">
+                    </div>
+            </li>
+            <li class="item-f">
+                <div class="box"></div>
+                    <div class="slide-img">
+                        <img src="/img/laitau-peqalm.jpg">
+                    </div>
+            </li>
+            <li class="item-g">
+                <div class="box"></div>
+                    <div class="slide-img">
+                        <img src="/img/laitau-peqalm3.jpg">
+                    </div>
+            </li>
+          </ul>
+
+
+          <!-- Footer -->
+        <footer>
+            <p class="contactos"><span class="contacte-nos">Contacte-nos</span><br>
+            Tel.: +351 265 550 640<br>
+            Email: admin@explorestay.pt</p>
+        </footer>
+    
+
+    </body>
+
+    </html>
+
+    <script>
+
+$(document).ready(function() {
+        $('#autoWidth').lightSlider({
+            autoWidth:true,
+            loop:true,
+            onSliderLoad: function() {
+                $('#autoWidth').removeClass('cS-hidden');
+            } 
+        });  
+      });
+
+    </script>
